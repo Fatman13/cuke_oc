@@ -1,0 +1,10 @@
+# yaml cook book http://www.yaml.org/YAML_for_ruby.html
+merchant_id: '298440'
+district_id: 310102
+# merchant_id: 298441
+data:
+ - 
+   id: '183019618'
+   name: product_name
+   count: 1
+access_token: 'ac31d3a4723d4dd1eeeb37a9b2f8d763'

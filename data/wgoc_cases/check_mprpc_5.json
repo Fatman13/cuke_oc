@@ -1,0 +1,28 @@
+{
+  "name": "Cuke_Automation_Template",
+  "ucId": 29844,
+  "outerId": null,
+  "assumer": "BUYER",
+  "valuation": "QUANTITY",
+  "consignAreaId": "310104",
+  "lastModify": "2014-01-28 14:06:33",
+  "shippingMethodList": [
+    {
+      "name": "COD",
+      "defaultStartStandards": "3.0",
+      "defaultStartFees": "10.00",
+      "defaultAddStandards": "1.0",
+      "defaultAddFees": "5.00",
+      "regionGroupList": [
+        {
+          "regionIds": "310000",
+          "regionTexts": null,
+          "startStandards": "1.0",
+          "startFees": "13.00",
+          "addStandards": "1.0",
+          "addFees": "3.00"
+        }
+      ]
+    }
+  ]
+}

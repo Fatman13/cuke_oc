@@ -1,0 +1,9 @@
+queryInfo:
+ product_id: 183019615
+ fid: 0
+ price: 4888.00
+ stock: 10
+kv:
+ id: 183019615
+ newPrice: 4888.00
+ oldPrice: 4988.00

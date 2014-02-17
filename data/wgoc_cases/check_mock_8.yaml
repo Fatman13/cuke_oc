@@ -1,0 +1,19 @@
+queryInfo:
+ product_id: 183019618
+ fid: 0
+ price: 4888.00
+ # stock: 10
+kv:
+ id: 183019618
+ newPrice: 4888.00
+ oldPrice: 4988.00
+ # 这边promotionId要跟query里面对上
+ promotionId: 1313
+query:
+ promotion_id: 1313
+ # 这里定义了一些常数，便于mock促销区间
+ start_time: 1
+ end_time: 1
+ type: 1
+ # product_id要跟上面的对上
+ productsPromotion: '[{"product_id":183019618,"product_outerid":"lengyu004","price":0.01,"limit":99999,"title":"商品库大促销自动化","prom_lock_stock":-1,"prom_remain_stock":-1,"is_deleted":false,"detail_json":""}]'
