@@ -19,7 +19,6 @@ Given /^我根据 (.*) 文件中的配置建立运费信息$/ do |mprpc_data_fil
   
   if !@mprpc_res.nil? && @mprpc_res.code == 200
     @fid = (JSON.parse(@mprpc_res.body))['result']['result']
-    # puts @fid
   end
 end
 

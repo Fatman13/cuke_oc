@@ -1,48 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="1" name="Check Order" skipped="0" tests="7" time="13.718785">
-<testcase classname="Check Order" name="验单逻辑 (outline example : | empty.json | check_mock_1.yaml | check_request_1.yaml | check_response_1.json |)" time="3.427196">
+<testsuite errors="0" failures="0" name="Check Order" skipped="0" tests="7" time="15.990913">
+<testcase classname="Check Order" name="验单逻辑 (outline example : | empty.json | check_mock_1.yaml | check_request_1.yaml | check_response_1.json |)" time="0.692039">
   <system-out/>
   <system-err/>
 </testcase>
-<testcase classname="Check Order" name="验单逻辑 (outline example : | check_mprpc_2.json | check_mock_2.yaml | check_request_2.yaml | check_response_2.json |)" time="1.218070">
+<testcase classname="Check Order" name="验单逻辑 (outline example : | check_mprpc_2.json | check_mock_2.yaml | check_request_2.yaml | check_response_2.json |)" time="1.570090">
   <system-out/>
   <system-err/>
 </testcase>
-<testcase classname="Check Order" name="验单逻辑 (outline example : | check_mprpc_3.json | check_mock_3.yaml | check_request_3.yaml | check_response_3.json |)" time="1.183067">
+<testcase classname="Check Order" name="验单逻辑 (outline example : | check_mprpc_3.json | check_mock_3.yaml | check_request_3.yaml | check_response_3.json |)" time="1.190068">
   <system-out/>
   <system-err/>
 </testcase>
-<testcase classname="Check Order" name="验单逻辑 (outline example : | check_mprpc_4.json | check_mock_4.yaml | check_request_4.yaml | check_response_4.json |)" time="3.766216">
+<testcase classname="Check Order" name="验单逻辑 (outline example : | check_mprpc_4.json | check_mock_4.yaml | check_request_4.yaml | check_response_4.json |)" time="1.159066">
   <system-out/>
   <system-err/>
 </testcase>
-<testcase classname="Check Order" name="验单逻辑 (outline example : | empty.json | check_mock_5.yaml | check_request_5.yaml | check_response_5.json |)" time="0.442025">
+<testcase classname="Check Order" name="验单逻辑 (outline example : | empty.json | check_mock_5.yaml | check_request_5.yaml | check_response_5.json |)" time="0.849048">
   <system-out/>
   <system-err/>
 </testcase>
-<testcase classname="Check Order" name="验单逻辑 (outline example : | empty.json | check_mock_6.yaml | check_request_6.yaml | check_response_6.json |)" time="3.416196">
+<testcase classname="Check Order" name="验单逻辑 (outline example : | empty.json | check_mock_6.yaml | check_request_6.yaml | check_response_6.json |)" time="9.813561">
   <system-out/>
   <system-err/>
 </testcase>
-<testcase classname="Check Order" name="验单逻辑 (outline example : | empty.json | empty.yaml | check_request_7.yaml | check_response_7.json |)" time="0.266015">
-  <failure message="failed 验单逻辑 (outline example : | empty.json | empty.yaml | check_request_7.yaml | check_response_7.json |)" type="failed">
-    <![CDATA[Scenario Outline: 验单逻辑
-
-Example row: | empty.json | empty.yaml | check_request_7.yaml | check_response_7.json |
-
-Message:
-]]>
-    <![CDATA[expected: {"message"=>{"field"=>{"444444444"=>"\u5546\u54C1\u5DF2\u4E0B\u67B6"}, "global"=>"\u5546\u54C1\u5DF2\u4E0B\u67B6ppp"}, "success"=>"false"}
-     got: {"message"=>{"field"=>{"444444444"=>"\u5546\u54C1\u5DF2\u4E0B\u67B6"}, "global"=>"\u5546\u54C1\u5DF2\u4E0B\u67B6"}, "success"=>"false"} (using ==)
-Diff:
-@@ -1,3 +1,3 @@
--"message" => {"field"=>{"444444444"=>"\u5546\u54C1\u5DF2\u4E0B\u67B6"}, "global"=>"\u5546\u54C1\u5DF2\u4E0B\u67B6ppp"},
-+"message" => {"field"=>{"444444444"=>"\u5546\u54C1\u5DF2\u4E0B\u67B6"}, "global"=>"\u5546\u54C1\u5DF2\u4E0B\u67B6"},
- "success" => "false"
- (RSpec::Expectations::ExpectationNotMetError)
-./features/step_definitions/check_kai_steps.rb:64:in `/^\u6211\u5C06\u5F97\u5230\u4E0E (.*) \u6587\u4EF6\u4E2D\u76F8\u540C\u7684json\u4E32$/'
-features\wgoc_check_kai.feature:13:in `Then 我将得到与 <response_data_file> 文件中相同的json串']]>
-  </failure>
+<testcase classname="Check Order" name="验单逻辑 (outline example : | empty.json | empty.yaml | check_request_7.yaml | check_response_7.json |)" time="0.717041">
   <system-out/>
   <system-err/>
 </testcase>
