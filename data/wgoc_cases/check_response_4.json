@@ -6,6 +6,7 @@
     "global": ""
   },
   "result": {
+    "entry_user": true,
     "packages": [
       {
         "id": 0,

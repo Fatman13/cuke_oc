@@ -8,7 +8,7 @@ require 'json'
 #require 'paramExtractor'
 
 # 验单api
-CHECK_REQUEST_URI = 'http://st01-ecom-jn3.st01.baidu.com:8913/weigou-ordercenter/api/order/check.do'
+CHECK_REQUEST_URI = 'http://db-rdqa-pool303.db01.baidu.com:8913/weigou-ordercenter/api/order/check.do'
 
 SCAFFOLDING_CREATE_PRODUCTAPI_QUERYINFO_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/scaffolding/create/ProductAPI/queryInfo'
 SCAFFOLDING_CREATE_KV_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/scaffolding/create/kv'
