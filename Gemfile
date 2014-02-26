@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 # gem 'sinatra', '1.3.2'
 gem 'json', '1.7.3'
+gem 'bundler', '1.3.4'
 # gem 'log4r', '1.1.4'
 
 group :test do
