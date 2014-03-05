@@ -1,0 +1,11 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "daigouId": 5558,
+    "orderId": "1103050",
+    "success": true,
+    "code": "SUCCESS",
+    "message": ""
+  },
+  "id": 1
+}

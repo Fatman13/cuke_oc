@@ -22,6 +22,7 @@ JSONRPC_SEND_DELIVERYREGIONSAPI_UPDATEDELIVERYREGIONS_URI = 'http://st01-ecom-jn
 # 'http://st01-ecom-jn3.st01.baidu.com:8913/weigou-ordercenter/drapi/OrderInnerAPI'
 # $ RESTCLIENT_LOG=stdout D:\Libs\cuke_oc
 # debug_output $stderr
+JSONRPC_VANILLA_ORDERINNERAPI_DAIGOUCREATEORDER_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/jsonrpc/vanilla/OrderInnerAPI/daigouCreateOrder'
 
 module PromotionTime
   BEFORE_PROMOTION = 1
