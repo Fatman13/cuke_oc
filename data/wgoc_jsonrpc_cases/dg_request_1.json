@@ -1,0 +1,20 @@
+{
+  "daigouOrder": {
+    "daigouId": 141,
+    "passportId": "1245",
+    "productIds": "656525250",
+    "productCounts": "5",
+    "customer": "木根",
+    "mobile": "12383846326",
+    "payStyle": "DAIGOU",
+    "province": "山东",
+    "city": "济南市",
+    "district": "大观区",
+    "town": "白贤镇",
+    "districtId": "120001",
+    "detailAddress": "龙山路22号",
+    "needInvoice": "true",
+    "invoiceTitle": "百度中国"
+  },
+  "token": "daigou_token_26e588a503074"
+}

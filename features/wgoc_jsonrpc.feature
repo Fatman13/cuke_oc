@@ -1,3 +1,4 @@
+@run_test
 Feature: Json-rpc
   为了保证订单中心各个jsonrpc的准确性，以及提高覆盖率。对各个jsonrpc的api发送请求，并校验返回结果。
 

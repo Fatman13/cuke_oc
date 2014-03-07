@@ -32,6 +32,7 @@ Given /^我根据 (.*) 文件中的配置制造mock商品信息$/ do |mock_data_
   @mock_params['queryInfo']['fid'] = @fid unless @fid == 0
 
   RestClient.get SCAFFOLDING_CREATE_KV_URI, :params => @mock_params['kv'] unless !@mock_params.key?('kv') || @mock_params['kv'].nil?
+  RestClient.get SCAFFOLDING_CREATE_OLDKV_URI, :params => @mock_params['oldkv'] unless !@mock_params.key?('oldkv') || @mock_params['oldkv'].nil?
   RestClient.get SCAFFOLDING_CREATE_PRODUCTAPI_QUERYINFO_URI, :params => @mock_params['queryInfo'] unless !@mock_params.key?('queryInfo') || @mock_params['queryInfo'].nil?
 
   # mock促销时间的时候，还需要一定处理

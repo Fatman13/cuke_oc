@@ -1,4 +1,4 @@
-@checkorder
+@checkorder @run_test
 Feature: Check Order
   为了保证订单的准确性，在提交订单之前，对订单进行验对。
 

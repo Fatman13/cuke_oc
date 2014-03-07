@@ -6,9 +6,11 @@ require 'yaml'
 require 'json'
 #require 'logger'
 #require 'paramExtractor'
+require File.join(File.dirname(__FILE__), '..', '..', 'lib', 'myHelper')
 
 # 验单api
 CHECK_REQUEST_URI = 'http://db-rdqa-pool303.db01.baidu.com:8913/weigou-ordercenter/api/order/check.do'
+CREATE_REQUEST_URI = 'http://db-rdqa-pool303.db01.baidu.com:8913/weigou-ordercenter/api/order/create.do'
 
 SCAFFOLDING_CREATE_PRODUCTAPI_QUERYINFO_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/scaffolding/create/ProductAPI/queryInfo'
 SCAFFOLDING_CREATE_KV_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/scaffolding/create/kv'
@@ -30,6 +32,8 @@ module PromotionTime
   AFTER_PROMOTION = 4
 end
 
+World(MyHelper)
+
 at_exit do 
-  RestClient.post JSONRPC_SEND_DELIVERYREGIONSAPI_UPDATEDELIVERYREGIONS_URI, "0"
+  # RestClient.post JSONRPC_SEND_DELIVERYREGIONSAPI_UPDATEDELIVERYREGIONS_URI, "0"
 end 
