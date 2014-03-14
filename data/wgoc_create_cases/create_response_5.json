@@ -1,0 +1,14 @@
+{
+  "message": {
+    "field": {
+      
+    },
+    "global": ""
+  },
+  "result": {
+    "orderId": "1103126",
+    "payStyle": 2,
+    "price": "24450.0"
+  },
+  "success": "true"
+}

@@ -1,0 +1,23 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "refundStatusCountDatas": [
+      {
+        "status": "WATI_FOR_HANDLING",
+        "total": 0
+      },
+      {
+        "status": "HANDLING_FINISHED",
+        "total": 28
+      },
+      {
+        "status": "ON_HANDLING",
+        "total": 0
+      }
+    ],
+    "success": true,
+    "code": "SUCCESS",
+    "message": ""
+  },
+  "id": "25"
+}

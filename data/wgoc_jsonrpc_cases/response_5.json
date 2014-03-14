@@ -1,0 +1,15 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "orderStatusCountDatas": [
+      {
+        "orderStatus": "CONFIRM",
+        "count": 146
+      }
+    ],
+    "success": true,
+    "code": "SUCCESS",
+    "message": ""
+  },
+  "id": "22"
+}

@@ -1,0 +1,24 @@
+# yaml cook book http://www.yaml.org/YAML_for_ruby.html
+merchant_id: '298440'
+district_id: 310102
+# merchant_id: 298441
+data:
+ merchant_id: '298440'
+ fare: 6.00
+ total_price: 400.00
+ items:
+  -  
+    id: '183019675'
+    name: product_name
+    count: 5
+access_token: 'ac31d3a4723d4dd1eeeb37a9b2f8d763'
+# create specific
+user_id: 18301961687
+addressee: '冷遇'
+address: '枫林路269弄'
+province: '上海市'
+city: '市辖区'
+district: '徐汇区'
+town: '内环以内'
+user_ip: '128.1.9.28'
+pay_style: '13'

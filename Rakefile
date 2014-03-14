@@ -5,7 +5,7 @@ require 'cucumber/rake/task'
 # end 
 
 Cucumber::Rake::Task.new :features do |t|
-  t.cucumber_opts = '-f junit features/wgoc_check_kai.feature --out "C:/Documents and Settings/work/.jenkins/workspace/wg_merchant_oc_regression/"'
+  t.cucumber_opts = '-f junit --tags @run_test --out .'
 end
 
 # namespace :features do

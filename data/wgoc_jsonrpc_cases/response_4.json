@@ -1,0 +1,194 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "refundDetailData": {
+      "refundId": 306,
+      "orderId": 1103009,
+      "refundType": "payonline",
+      "status": "refund_close",
+      "fefundPayment": 1,
+      "name": null,
+      "mobile": "18301961687",
+      "payType": "payonline",
+      "createTime": 1392257854000,
+      "orderCreateTime": 1392191916000,
+      "applyTime": 1392864899000,
+      "sendGoods": true,
+      "deadLine": 0,
+      "products": [
+        {
+          "product_id": 181835090,
+          "product_name": "CHANDO/自然堂,活泉加倍保湿霜",
+          "price": "0.01",
+          "count": 1,
+          "product_outer_id": null,
+          "product_image_url": "http://cq01-testing-img13.vm.baidu.com:8092/it/u=4070288502,3093569227&fm=100",
+          "promotion_id": null,
+          "gifts": [
+            
+          ]
+        },
+        {
+          "product_id": 181835090,
+          "product_name": "CHANDO/自然堂,活泉加倍保湿霜",
+          "price": "0.01",
+          "count": 1,
+          "product_outer_id": null,
+          "product_image_url": "http://cq01-testing-img13.vm.baidu.com:8092/it/u=4070288502,3093569227&fm=100",
+          "promotion_id": null,
+          "gifts": [
+            
+          ]
+        }
+      ],
+      "orderInfo": {
+        "id": 1103009,
+        "createTime": 1392191916000,
+        "postage": "0.00",
+        "discount": null,
+        "total": "0.01",
+        "status": "wait_buyer_receive"
+      },
+      "operationHistories": [
+        {
+          "createTime": 1389772040000,
+          "name": "QA测试",
+          "contentTitle": "买家申请退款",
+          "contentDetail": "  "
+        },
+        {
+          "createTime": 1389772237000,
+          "name": "QA测试",
+          "contentTitle": "卖家同意退款协议",
+          "contentDetail": null
+        },
+        {
+          "createTime": 1392257854000,
+          "name": "QA测试",
+          "contentTitle": "买家申请退款",
+          "contentDetail": "呃呃呃呃呃呃呃呃呃"
+        },
+        {
+          "createTime": 1392260099000,
+          "name": "QA测试",
+          "contentTitle": "卖家拒绝退款协议",
+          "contentDetail": "老子不退。"
+        },
+        {
+          "createTime": 0,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        },
+        {
+          "createTime": 0,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        },
+        {
+          "createTime": 0,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        },
+        {
+          "createTime": 0,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        },
+        {
+          "createTime": 0,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        },
+        {
+          "createTime": 0,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        },
+        {
+          "createTime": 0,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        },
+        {
+          "createTime": 0,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        },
+        {
+          "createTime": 0,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        },
+        {
+          "createTime": 0,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        },
+        {
+          "createTime": 1392864899000,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        },
+        {
+          "createTime": 1392864899000,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        },
+        {
+          "createTime": 1392864899000,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        },
+        {
+          "createTime": 1392864899000,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        },
+        {
+          "createTime": 1392864899000,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        },
+        {
+          "createTime": 1392864899000,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        },
+        {
+          "createTime": 1392864899000,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        },
+        {
+          "createTime": 1392864899000,
+          "name": "QA测试",
+          "contentTitle": "系统关闭退款",
+          "contentDetail": null
+        }
+      ],
+      "isBuyerHasSendGoods": false,
+      "customerServiceStatus": null
+    },
+    "success": true,
+    "code": "SUCCESS",
+    "message": ""
+  },
+  "id": "36"
+}

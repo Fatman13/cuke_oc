@@ -25,11 +25,25 @@ JSONRPC_SEND_DELIVERYREGIONSAPI_UPDATEDELIVERYREGIONS_URI = 'http://st01-ecom-jn
 # $ RESTCLIENT_LOG=stdout D:\Libs\cuke_oc
 # debug_output $stderr
 JSONRPC_VANILLA_ORDERINNERAPI_DAIGOUCREATEORDER_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/jsonrpc/vanilla/OrderInnerAPI/daigouCreateOrder'
+JSONRPC_VANILLA_ORDERINNERAPI_QUERYORDERS_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/jsonrpc/vanilla/OrderInnerAPI/queryOrders'
+JSONRPC_VANILLA_ORDERINNERAPI_QUERYREFUNDLIST_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/jsonrpc/vanilla/OrderInnerAPI/queryRefundList'
+JSONRPC_VANILLA_ORDERINNERAPI_QUERYREFUNDDETAIL_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/jsonrpc/vanilla/OrderInnerAPI/queryRefundDetail'
+JSONRPC_VANILLA_ORDERINNERAPI_QUERYORDERQUANTITYBYORDERSTATUS_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/jsonrpc/vanilla/OrderInnerAPI/queryOrderQuantityByOrderStatus'
+JSONRPC_VANILLA_ORDERINNERAPI_QUERYREFUNDQUANTITYBYSTATUS_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/jsonrpc/vanilla/OrderInnerAPI/queryRefundQuantityByStatus'
+JSONRPC_VANILLA_ORDERINNERAPI_QUERYPACKAGEIDSBYORDERID_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/jsonrpc/vanilla/OrderInnerAPI/queryPackageIdsByOrderId'
+JSONRPC_VANILLA_ORDERINNERAPI_QUERYORDERIDBYPACKAGEID_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/jsonrpc/vanilla/OrderInnerAPI/queryOrderIdByPackageId'
 
 module PromotionTime
   BEFORE_PROMOTION = 1
   DURING_PROMOTION = 2
   AFTER_PROMOTION = 4
+end
+
+# OrderInnerAPI_daigouCreateOrder
+module Jsonrpc
+  ORDERINNERAPI_DAIGOUCREATEORDER = 'OrderInnerAPI_daigouCreateOrder'
+  ORDERINNERAPI_QUERYORDERS = 'OrderInnerAPI_queryOrders'
+  ORDERINNERAPI_QUERYREFUNDLIST = 'OrderInnerAPI_queryRefundList'
 end
 
 World(MyHelper)

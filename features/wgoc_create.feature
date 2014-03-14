@@ -8,11 +8,11 @@ Feature: Create Order
     When 我根据<request_data_file>文件中的配置用post方法发送该请求至oc的话
     Then 我应该得到与<response_data_file>文件中差不多的json串
 
-  Examples: case_1: 下单成功（一个商品）
+  Examples: case_1: 下单成功（一个商品，校验最终价格）
     | mprpc_data_file | mock_data_file | request_data_file | response_data_file |
     | empty.json | create_mock_1.yaml | create_request_1.yaml | create_response_1.json |
 
-  Examples: case_2: 下单成功（多个商品）
+  Examples: case_2: 下单成功（多个商品，校验最终价格）
     | mprpc_data_file | mock_data_file | request_data_file | response_data_file |
     | empty.json | create_mock_2.yaml | create_request_2.yaml | create_response_2.json |
 
@@ -23,3 +23,7 @@ Feature: Create Order
   Examples: case_4: 下单失败（无address）
     | mprpc_data_file | mock_data_file | request_data_file | response_data_file |
     | empty.json | create_mock_4.yaml | create_request_4.yaml | create_response_4.json |
+
+  Examples: case_5: 下单成功（默认payStyle=2）
+    | mprpc_data_file | mock_data_file | request_data_file | response_data_file |
+    | empty.json | create_mock_4.yaml | create_request_4.yaml | create_response_4.json |  

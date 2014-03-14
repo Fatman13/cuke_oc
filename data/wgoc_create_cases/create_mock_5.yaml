@@ -1,0 +1,12 @@
+queryInfo:
+ product_id: 183019675
+ # fid: 0
+ price: 4888.00
+kv:
+ id: 183019675
+ newPrice: 4888.00
+ oldPrice: 4988.00
+oldkv:
+ id: 183019675
+ newPrice: 4888.00
+ oldPrice: 4988.00

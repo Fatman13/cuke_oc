@@ -20,4 +20,10 @@ module MyHelper
     }
     @last_response = RestClient.get url, :params => @request_params
   end
+
+  # force ignore unicode characters
+  # http://stackoverflow.com/questions/13003287/encodingundefinedconversionerror
+  def parse_json(path)
+    JSON.parse((File.read(path)).to_s.encode('ascii', {:invalid => :replace, :undef => :replace, :replace => '?'}))
+  end
 end
