@@ -12,6 +12,7 @@ Feature: Check Order
     When 我用post方法发送该请求至oc的话
     Then 我将得到与 <response_data_file> 文件中相同的json串
 
+  @debug
   Examples: case_1: 默认全国10块, 非促销商品验单成功（购买1件&支持配送<上海&北京&天津>&未绑定运费模板）
     | mprpc_data_file | mock_data_file | request_data_file | response_data_file |
     | empty.json | check_mock_1.yaml | check_request_1.yaml | check_response_1.json |
@@ -36,6 +37,7 @@ Feature: Check Order
     | mprpc_data_file | mock_data_file | request_data_file | response_data_file |
     | empty.json | check_mock_6.yaml | check_request_6.yaml | check_response_6.json |
 
+  @debug7
   Examples: case_7: 验单——非促销商品验单失败（KV获取不到详情）
     | mprpc_data_file | mock_data_file | request_data_file | response_data_file |
     | empty.json | empty.yaml | check_request_7.yaml | check_response_7.json |

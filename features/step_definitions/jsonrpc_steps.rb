@@ -16,6 +16,21 @@ def get_orderId
   @order_data['orderId']
 end
 
+def set_pkgId(id)
+  @order_data = Hash.new
+  @order_data['packageId'] = id
+  File.open('./data/wgoc_jsonrpc_cases/package_dump.yaml', 'w') { |file|
+    file.write @order_data.to_yaml
+  }
+end
+
+def get_pkgId
+  File.open('./data/wgoc_jsonrpc_cases/package_dump.yaml', 'r') { |file|
+    @order_data = YAML.load(file.read)
+  }
+  @order_data['packageId']
+end
+
 # ORDERINNERAPI_DAIGOUCREATEORDER ORDERINNERAPI_DAIGOUCREATEORDER ORDERINNERAPI_DAIGOUCREATEORDER ORDERINNERAPI_DAIGOUCREATEORDER ORDERINNERAPI_DAIGOUCREATEORDER 
 Given /^我根据(.*)文件中的配置$/ do |arg1|
   # pending # express the regexp above with the code you wish you had
@@ -163,19 +178,22 @@ end
 
 Then /^我应该得到与(.*)文件中相同的json柒$/ do |arg1|
   # pending # express the regexp above with the code you wish you had
+  set_pkgId(-1)
+
   @response_json = JSON.parse(@response.body)
   @expected_json = parse_json('./data/wgoc_jsonrpc_cases/' + arg1)
 
   # puts @response_json
   # puts get_orderId
   @response_json['result']['status'].should == @expected_json['result']['status']
+  set_pkgId(@response_json['result']['packageIds'][0])
 end
 
 # queryOrderIdByPackageId queryOrderIdByPackageId queryOrderIdByPackageId queryOrderIdByPackageId
-Around('@after_queryPackageId') do |scenario, block|
+Around('@after_queryPkgId') do |scenario, block|
   # puts get_orderId.to_i
-  # # set_orderId(100)
-  if get_orderId.to_i > 0
+  # set_pkgId(-1)
+  if get_pkgId.to_i > 0
     block.call
   end
   # block.call
@@ -185,7 +203,7 @@ When /^我根据(.*)用post方法让测试桩发送请求至oc捌$/ do |arg1|
   # pending # express the regexp above with the code you wish you had
   # puts get_orderId
   @request_data = JSON.parse((File.read('./data/wgoc_jsonrpc_cases/' + arg1)).to_s.encode('ascii', {:invalid => :replace, :undef => :replace, :replace => '?'}))
-  # @request_data['orderId'] = get_orderId
+  @request_data['packageId'] = get_pkgId
   @response = RestClient.post JSONRPC_VANILLA_ORDERINNERAPI_QUERYORDERIDBYPACKAGEID_URI, @request_data.to_json
 end
 

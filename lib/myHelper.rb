@@ -21,6 +21,16 @@ module MyHelper
     @last_response = RestClient.get url, :params => @request_params
   end
 
+  def bidu_get(url, options={})
+    # puts options[:yaml].nil?
+    # puts 'yaml: ' + options[:yaml]
+    File.open(options[:yaml], 'r') { |file|
+      @request_params = YAML.load(file.read)
+      # puts @request_params
+    }
+    @last_response = RestClient.get url, :params => @request_params
+  end
+
   # force ignore unicode characters
   # http://stackoverflow.com/questions/13003287/encodingundefinedconversionerror
   def parse_json(path)

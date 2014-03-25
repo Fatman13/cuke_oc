@@ -12,3 +12,6 @@ group :test do
   gem 'rest-client', '1.6.7'
   # gem 'childprocess', '0.3.4'
 end
+
+gem 'multi_json', '1.8.2'
+gem 'mime-types', '2.1'

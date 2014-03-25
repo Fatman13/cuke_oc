@@ -1,0 +1,68 @@
+{
+  "message": {
+    "field": {
+      
+    },
+    "global": ""
+  },
+  "result": {
+    "close_detail": "",
+    "close_reason": "",
+    "delivered_by_multi_packages": false,
+    "delivery_info": {
+      "address": "上海市市辖区浦东新区中环外环之间汤臣豪园3期10-101（没人放物业59号楼）",
+      "addressee": "魏广福",
+      "tel": "13818364639"
+    },
+    "discount": 0,
+    "entry_user": true,
+    "invoice_type": "0",
+    "logistics_info": [
+      
+    ],
+    "memo": "",
+    "memo_level": 1,
+    "merchant": "PBA化妆品",
+    "merchant_id": "418",
+    "merchant_tel": "4007796400",
+    "message": "",
+    "order_create_time": "2014-03-17 14:31:14",
+    "order_id": 1145266,
+    "order_status": "cancel",
+    "out_order_id": "1145266",
+    "out_package_id": "",
+    "package_id": 1156209,
+    "pay_online": true,
+    "payment_method": "1",
+    "products": [
+      {
+        "count": 1,
+        "gifts": [
+          
+        ],
+        "goods_refund_status": "refund_success",
+        "goods_status": "cancel",
+        "id": 181938989,
+        "image": "http://t10.baidu.com/it/u=865560,3059753897&fm=58",
+        "name": "PBA 竹炭手工皂120g 控油洁面乳 手工皂怎么样 祛痘控油 黑头洁净 祛黑头 控油清爽 深层清洁 改善毛孔粗大",
+        "price": "49.00",
+        "refund_id": "525"
+      }
+    ],
+    "protections": [
+      
+    ],
+    "refunds": [
+      {
+        "customer": "",
+        "refund_id": 525,
+        "status": "refund_success"
+      }
+    ],
+    "shipping_costs": "0.00",
+    "status": "cancel",
+    "total_price": "49.00",
+    "user_id": ""
+  },
+  "success": "true"
+}

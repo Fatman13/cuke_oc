@@ -2,7 +2,7 @@
 Feature: Json-rpc
   为了保证订单中心各个jsonrpc的准确性，以及提高覆盖率。对各个jsonrpc的api发送请求，并校验返回结果。
 
-  @daigou_set
+  @daigou_set @daigou
   Scenario Outline: Json-rpc发送请求
     Given 我根据<mock_data_file>文件中的配置
     When 我根据<request_data_file>用post方法发送jsonrpc请求至oc
@@ -59,7 +59,7 @@ Feature: Json-rpc
   	| request_data_file | response_data_file |
   	| request_6.json | response_6.json |
 
-  @new_feature @daigou_set @after_daigou
+  @daigou_set @after_daigou
   Scenario Outline: Json-rpc发送请求
     When 我根据<request_data_file>用post方法让测试桩发送请求至oc柒
     Then 我应该得到与<response_data_file>文件中相同的json柒
@@ -67,3 +67,12 @@ Feature: Json-rpc
    Examples: OrderInnerAPI/queryPackageIdsByOrderId 代购接口测试成功后这个才会跑。
   	| request_data_file | response_data_file |
   	| request_7.json | response_7.json |
+
+  @daigou_set @after_queryPkgId
+  Scenario Outline: Json-rpc发送请求
+    When 我根据<request_data_file>用post方法让测试桩发送请求至oc捌
+    Then 我应该得到与<response_data_file>文件中相同的json捌
+
+   Examples: OrderInnerAPI/queryOrderIdByPackageId queryPackageIdsByOrderId接口测试成功后这个才会跑。
+  	| request_data_file | response_data_file |
+  	| request_8.json | response_8.json |
