@@ -1,0 +1,14 @@
+queryInfo:
+ product_id: 183019619
+ fid: 0
+ price: 4888.00
+kv:
+ id: 183019619
+ newPrice: 4888.00
+ oldPrice: 4988.00
+ is_deleted: 1
+oldkv:
+ id: 183019619
+ newPrice: 4888.00
+ oldPrice: 4988.00
+ is_deleted: 1

@@ -21,6 +21,7 @@ Feature: Check Order
     | mprpc_data_file | mock_data_file | request_data_file | response_data_file |
     | check_mprpc_2.json | check_mock_2.yaml | check_request_2.yaml | check_response_2.json |
 
+  @debug_check_3
   Examples: case_3: 验单——非促销商品验单成功（购买1件&支持配送&绑定运费模板&上海地区使用指定运费），默认首件13块
     | mprpc_data_file | mock_data_file | request_data_file | response_data_file |
     | check_mprpc_3.json | check_mock_3.yaml | check_request_3.yaml | check_response_3.json |
@@ -45,3 +46,8 @@ Feature: Check Order
 #  Examples: case_8: 验单——促销未开始<锁定库存>——商品库存&促销库存分别为51,50，购买1件，成交价为商品现价
 #    | mprpc_data_file | mock_data_file | request_data_file | response_data_file |
 #    | empty.json | empty.yaml | check_request_7.yaml | check_response_7.json |
+
+  @debug8
+  Examples: case_8: is_deleted的新case
+    | mprpc_data_file | mock_data_file | request_data_file | response_data_file |
+    | empty.json | empty.yaml | check_request_9.yaml | check_response_9.json |

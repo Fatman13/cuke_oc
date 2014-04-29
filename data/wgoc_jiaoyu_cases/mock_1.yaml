@@ -1,5 +1,17 @@
+# for jiaoyu
 kv:
  id: 183019710
- newPrice: 4888.00
- oldPrice: 4988.00
- merchantId: 298447
+ newPrice: 0.01
+ oldPrice: 0.01
+ merchantId: 1108
+# for weigou
+queryInfo:
+ product_id: 183019710
+ fid: 22
+ price: 0.01
+ merchantId: 298440
+oldkv:
+ id: 183019710
+ newPrice: 0.01
+ oldPrice: 0.01
+ merchantId: 298440

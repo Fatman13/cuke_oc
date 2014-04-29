@@ -1,16 +1,16 @@
 app_code: jiaoyu
 biz_code:
 token:
-merchant_id: 298447
+merchant_id: 1108
 passport_id: 738487457
 user_ip: "124.74.245.180"
 access_token: ac31d3a4723d4dd1eeeb37a9b2f8d763
 data:
- merchant_id: '298447'
+ merchant_id: '1108'
  fare: 6.00
  total_price: 400.00
  items:
-  -  
+  -
     id: '183019710'
     name: product_name
     count: 1

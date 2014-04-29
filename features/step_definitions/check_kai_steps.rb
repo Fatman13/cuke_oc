@@ -24,6 +24,7 @@ end
 
 Given /^我根据 (.*) 文件中的配置制造mock商品信息$/ do |mock_data_file| 
   #pending # express the regexp above with the code you wish you had
+  # return if mock_data_file == 'empty.yaml'
   File.open('./data/wgoc_cases/' + mock_data_file, 'r') { |file|
       @mock_params = YAML.load(file.read)
       # puts @mock_params
@@ -31,7 +32,7 @@ Given /^我根据 (.*) 文件中的配置制造mock商品信息$/ do |mock_data_
   # 把前面mprpc返回的delivery_id设定为mock商品的fid
   @mock_params['queryInfo']['fid'] = @fid unless @fid == 0
 
-  RestClient.get SCAFFOLDING_CREATE_KV_URI, :params => @mock_params['kv'] unless !@mock_params.key?('kv') || @mock_params['kv'].nil?
+  RestClient.get SCAFFOLDING_CREATE_KV_URI, :params => @mock_params['kv'] unless !@mock_params.key?(:kv) || @mock_params['kv'].nil?
   RestClient.get SCAFFOLDING_CREATE_OLDKV_URI, :params => @mock_params['oldkv'] unless !@mock_params.key?('oldkv') || @mock_params['oldkv'].nil?
   RestClient.get SCAFFOLDING_CREATE_PRODUCTAPI_QUERYINFO_URI, :params => @mock_params['queryInfo'] unless !@mock_params.key?('queryInfo') || @mock_params['queryInfo'].nil?
 
@@ -61,5 +62,15 @@ When /^我用post方法发送该请求至oc的话$/ do
 end
 
 Then /^我将得到与 (.*) 文件中相同的json串$/ do |response_data_file|
-  JSON.parse(@last_response.body).should == JSON.parse(File.read('./data/wgoc_cases/' + response_data_file))
+  @got_json = JSON.parse(@last_response.body)
+  @expected_json = JSON.parse(File.read('./data/wgoc_cases/' + response_data_file))
+
+  if @got_json['success'] == 'true'
+    @got_json['result']['shopping_costs'].should == @expected_json['result']['shopping_costs']
+    @got_json['result']['total_price'].should == @expected_json['result']['total_price']
+  end
+
+  if @expected_json['success'] == 'false'
+    @got_json['success'].should == @expected_json['success']
+  end
 end 

@@ -1,0 +1,52 @@
+{
+  "message": {
+    "field": {
+      
+    },
+    "global": ""
+  },
+  "result": {
+    "amount": 4900,
+    "close_time": 0,
+    "comments": [
+      {
+        "author": "",
+        "content": "下次再买",
+        "time": "2014-03-17 14:41:41"
+      },
+      {
+        "author": "418",
+        "content": "",
+        "time": "2014-03-17 16:19:00"
+      },
+      {
+        "author": "pc",
+        "content": "",
+        "time": "2014-03-17 16:19:01"
+      }
+    ],
+    "customer": "",
+    "detail": "",
+    "goods_received": "false",
+    "max_refund_amount": 4900,
+    "order_id": 1145266,
+    "products": [
+      {
+        "count": 1,
+        "id": 181938989,
+        "img": "http://t10.baidu.com/it/u=865560,3059753897&fm=58",
+        "name": "PBA 竹炭手工皂120g 控油洁面乳 手工皂怎么样 祛痘控油 黑头洁净 祛黑头 控油清爽 深层清洁 改善毛孔粗大",
+        "price": 49
+      }
+    ],
+    "reason": "订购错误",
+    "return_address": "郑腾",
+    "return_addressee": "福建省厦门市思明区佰翔酒店对面永嘉工业园A栋2楼",
+    "return_item": "false",
+    "return_tel": "15080335951",
+    "status": "refund_success",
+    "submit_time": 1395044341000,
+    "valid_time": 0
+  },
+  "success": "true"
+}

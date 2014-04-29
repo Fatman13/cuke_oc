@@ -36,4 +36,9 @@ module MyHelper
   def parse_json(path)
     JSON.parse((File.read(path)).to_s.encode('ascii', {:invalid => :replace, :undef => :replace, :replace => '?'}))
   end
+
+  def send_jsonrpc_request(request_url, api_name, method_name, params)
+    request_format = '{"jsonrpc":"2.0","method":"%s","id":1,"params":[%s]}' % [method_name, params]
+    @response = RestClient.post request_url + api_name, request_format, :content_type => 'application/baidu.json-rpc'
+  end
 end

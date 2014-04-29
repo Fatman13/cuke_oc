@@ -1,12 +1,12 @@
 queryInfo:
  product_id: 183019674
  # fid: 0
- price: 4888.00
+ price: 0.01
 kv:
  id: 183019674
- newPrice: 4888.00
- oldPrice: 4988.00
+ newPrice: 0.01
+ oldPrice: 0.01
 oldkv:
  id: 183019674
- newPrice: 4888.00
- oldPrice: 4988.00
+ newPrice: 0.01
+ oldPrice: 0.01

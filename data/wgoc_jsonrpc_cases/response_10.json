@@ -1,0 +1,61 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "order_info": {
+      "package_id": "1083441",
+      "package_status": 8,
+      "product_list": [
+        {
+          "product_id": 183019710,
+          "product_name": "She's SHG9901709",
+          "price": 4888.00,
+          "count": 1,
+          "product_outer_id": "",
+          "pro duct_image_url": "http://t12.baidu.com/it/u=287414984,3880994339&fm=58",
+          "promotion_id": null,
+          "gifts": [
+            
+          ]
+        }
+      ],
+      "total _price": 4888.00,
+      "carriage_price": 0.00,
+      "discount": null,
+      "need_receipt": false,
+      "receipt_type": null,
+      "receipt_title": null,
+      "history_list": [
+        {
+          "status": 1024,
+          "change_time": 1395905885000,
+          "adder": "buyer"
+        },
+        {
+          "status": 8,
+          "change_time": 1395906345000,
+          "adder": "system"
+        }
+      ],
+      "province": "������",
+      "city": "���������������",
+      "district": "���������������",
+      "addr ess": "���������������������������������������",
+      "customer": "���������������������",
+      "mobile": "11111111111",
+      "orde r_id": "1103317",
+      "order_status": 8,
+      "pay_online": true,
+      "refundInfo": null,
+      "cancelReasonType": null,
+      "cancelReasonMsg": null,
+      "comment_seller": "",
+      "message": ""
+    },
+    "status": 0,
+    "message": null,
+    "commData": {
+      
+    }
+  },
+  "id": 1
+}

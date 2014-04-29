@@ -1,0 +1,11 @@
+app_code: 
+biz_code:
+token:
+access_token: ac31d3a4723d4dd1eeeb37a9b2f8d763
+orderId: 1103242
+price: 0.01
+bankId:
+payType:
+channel: alipay
+md5: 3c1bca6ba432376b21f94bad235a218a
+return_url: http://weigou.baidu.com

@@ -16,7 +16,23 @@ LIST_REQUEST_URI = 'http://db-rdqa-pool303.db01.baidu.com:8913/weigou-ordercente
 DETAIL_REQUEST_URI = 'http://db-rdqa-pool303.db01.baidu.com:8913/weigou-ordercenter/api/order/package/detail'
 REFUND_APPLY_REQUEST_URI = 'http://db-rdqa-pool303.db01.baidu.com:8913/weigou-ordercenter/refund/apply.do'
 REFUND_DETAIL_REQUEST_URI = 'http://db-rdqa-pool303.db01.baidu.com:8913/weigou-ordercenter/refund/detail.do'
-GET_URL_REQUEST_URI = 'http://10.52.154.40:8891/weigou-paycenter/api/midpage/pay/getUrl'
+# GET_URL_REQUEST_URI_BAK = 'http://10.48.57.34:8891/weigou-paycenter/api/midpage/pay/getUrl'
+GET_URL_REQUEST_URI = 'http://10.48.57.34:8891/weigou-paycenter/api/midpage/pay/getUrl'
+
+# 线上
+# CREATE_REQUEST_PROD_URI = 'http://api.weigou.baidu.com/api/order/create.do'
+# LIST_REQUEST_PROD_URI = 'http://api.weigou.baidu.com/api/order/list.do'
+# DETAIL_REQUEST_PROD_URI = 'http://api.weigou.baidu.com/api/order/package/detail'
+# REFUND_APPLY_REQUEST_PROD_URI = 'http://api.weigou.baidu.com/refund/apply.do'
+# REFUND_DETAIL_REQUEST_PROD_URI = 'http://api.weigou.baidu.com/refund/detail.do'
+# GET_URL_REQUEST_PROD_URI = 'http://pay.weigou.baidu.com/api/midpage/pay/getUrl'
+# 伪线上
+CREATE_REQUEST_PROD_URI = 'http://cq01-testing-ubp04.vm.baidu.com:8912/weigou-ordercenter/api/order/create.do'
+LIST_REQUEST_PROD_URI = 'http://cq01-testing-ubp04.vm.baidu.com:8912/weigou-ordercenter/api/order/list.do'
+DETAIL_REQUEST_PROD_URI = 'http://cq01-testing-ubp04.vm.baidu.com:8912/weigou-ordercenter/api/order/package/detail'
+REFUND_APPLY_REQUEST_PROD_URI = 'http://cq01-testing-ubp04.vm.baidu.com:8912/weigou-ordercenter/refund/apply.do'
+REFUND_DETAIL_REQUEST_PROD_URI = 'http://cq01-testing-ubp04.vm.baidu.com:8912/weigou-ordercenter/refund/detail.do'
+GET_URL_REQUEST_PROD_URI = 'http://cq01-testing-ubp04.vm.baidu.com:8891/weigou-paycenter/api/midpage/pay/getUrl'
 
 SCAFFOLDING_CREATE_PRODUCTAPI_QUERYINFO_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/scaffolding/create/ProductAPI/queryInfo'
 SCAFFOLDING_CREATE_KV_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/scaffolding/create/kv'
@@ -38,6 +54,13 @@ JSONRPC_VANILLA_ORDERINNERAPI_QUERYORDERQUANTITYBYORDERSTATUS_URI = 'http://st01
 JSONRPC_VANILLA_ORDERINNERAPI_QUERYREFUNDQUANTITYBYSTATUS_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/jsonrpc/vanilla/OrderInnerAPI/queryRefundQuantityByStatus'
 JSONRPC_VANILLA_ORDERINNERAPI_QUERYPACKAGEIDSBYORDERID_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/jsonrpc/vanilla/OrderInnerAPI/queryPackageIdsByOrderId'
 JSONRPC_VANILLA_ORDERINNERAPI_QUERYORDERIDBYPACKAGEID_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/jsonrpc/vanilla/OrderInnerAPI/queryOrderIdByPackageId'
+JSONRPC_VANILLA_ORDERINNERAPI_QUERYORDERSDETAIL_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/jsonrpc/vanilla/OrderInnerAPI/getOrdersDetail'
+JSONRPC_VANILLA_ORDERINNERAPI_QUERYREFUNDLIST_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/jsonrpc/vanilla/OrderInnerAPI/queryRefundList'
+JSONRPC_VANILLA_ORDERINNERAPI_QUERYREFUNDDETAIL_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/jsonrpc/vanilla/OrderInnerAPI/queryRefundDetail'
+JSONRPC_VANILLA_ORDERINNERAPI_HANDLEREFUNDAPPLY_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/jsonrpc/vanilla/OrderInnerAPI/handleRefundApply'
+
+# http://10.26.92.37:8891/weigou-ordercenter/drapi
+JSONRPC_VANILLA_ORDERINNERAPI_QUERYORDERS_WGF_URI = 'http://st01-ecom-jn2.st01.baidu.com:8890/jsonrpc/vanilla/OrderInnerAPI/queryOrders'
 
 YAML::ENGINE.yamler = 'syck'
 

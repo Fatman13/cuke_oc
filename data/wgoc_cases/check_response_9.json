@@ -1,0 +1,29 @@
+{
+  "message": {
+    "field": {
+      
+    },
+    "global": ""
+  },
+  "result": {
+    "entry_user": true,
+    "packages": [
+      {
+        "id": 0,
+        "products": [
+          {
+            "count": 1,
+            "id": 183019611,
+            "oldPrice": "4988.0",
+            "price": "4888.0"
+          }
+        ],
+        "shopping_costs": "0",
+        "total_price": "4888.0"
+      }
+    ],
+    "shopping_costs": "10.0",
+    "total_price": "4898.0"
+  },
+  "success": "false"
+}

@@ -1,0 +1,12 @@
+{
+  "message": {
+    "field": {
+      
+    },
+    "global": ""
+  },
+  "result": {
+    "url": "https://www.baifubao.com/api/0/pay/0/direct?sign_method=1&total_amount=1&sp_no=3300000057&page_url=http://cq01-sdc-ma34.vm.baidu.com:8082/confirm_order/finish&input_charset=1&goods_name=%CC%EC%D3%EF+W656+%B1%E4%C9%AB%C1%FA+%BB%C6%C2%CC%C9%AB&order_no=201403191000004461&currency=1&return_url=http://10.237.42.67:8038/weigou-paycenter/pay/receive_backSend&version=2&order_create_time=20140319180437&pay_type=3&bank_no=201&service_code=1&sign=5e6bb4194c3ffd593c4010474a86de43"
+  },
+  "success": "true"
+}

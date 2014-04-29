@@ -63,6 +63,8 @@ When /^我根据(.*)用post方法发送jsonrpc请求至oc$/ do |arg1|
     # puts @dg_request_json
     JSON.dump(@dg_request_data, file)
   }
+
+  puts @response
 end
 
 Then /^我应该得到与(.*)文件中相同的json串壹$/ do |arg1|
@@ -91,9 +93,14 @@ end
 
 # ORDERINNERAPI_QUERYORDERS ORDERINNERAPI_QUERYORDERS ORDERINNERAPI_QUERYORDERS ORDERINNERAPI_QUERYORDERS 
 When /^我根据(.*)用post方法发送query请求至oc$/ do |arg1|
+  puts arg1
   @request_data = JSON.parse((File.read('./data/wgoc_jsonrpc_cases/' + arg1)).to_s.encode('ascii', {:invalid => :replace, :undef => :replace, :replace => '?'}))
-  @request_data['condition']['end_time'] = Time.now.to_i
+  # @request_data['condition']['end_time'] = Time.now.to_i
   @response = RestClient.post JSONRPC_VANILLA_ORDERINNERAPI_QUERYORDERS_URI, @request_data.to_json
+  puts @request_data.to_json
+
+  puts @request_data['condition']['end_time']
+  puts @response
 end
 
 Then /^我应该得到与(.*)文件中相同的json串贰$/ do |arg1|
@@ -107,6 +114,8 @@ When /^我根据(.*)用post方法让测试桩发送请求至oc叁$/ do |arg1|
   @request_data = JSON.parse((File.read('./data/wgoc_jsonrpc_cases/' + arg1)).to_s.encode('ascii', {:invalid => :replace, :undef => :replace, :replace => '?'}))
   @request_data['endTime'] = Time.now.to_i
   @response = RestClient.post JSONRPC_VANILLA_ORDERINNERAPI_QUERYREFUNDLIST_URI, @request_data.to_json
+
+  puts @request_data.to_json
 end
 
 Then /^我应该得到与(.*)文件中相同的json串叁$/ do |arg1|
@@ -215,4 +224,88 @@ Then /^我应该得到与(.*)文件中相同的json捌$/ do |arg1|
   # puts @response_json
   # puts get_orderId
   @response_json['result']['status'].should == @expected_json['result']['status']
+end
+
+# getOrdersDetail getOrdersDetail getOrdersDetail getOrdersDetail getOrdersDetail getOrdersDetail
+When /^我根据(.*)用post方法让测试桩发送请求至oc玖$/ do |arg1|
+  # pending # express the regexp above with the code you wish you had
+  # puts get_orderId
+  @request_data = JSON.parse((File.read('./data/wgoc_jsonrpc_cases/' + arg1)).to_s.encode('ascii', {:invalid => :replace, :undef => :replace, :replace => '?'}))
+  # @request_data['packageId'] = get_pkgId
+  @request_data['order_id'] = get_orderId_edu
+  @response = RestClient.post JSONRPC_VANILLA_ORDERINNERAPI_QUERYORDERSDETAIL_URI, @request_data.to_json
+
+  puts @request_data['order_id'] 
+  puts @response
+end
+
+Then /^我应该得到与(.*)文件中相同的json玖$/ do |arg1|
+  # pending # express the regexp above with the code you wish you had
+  @response_json = JSON.parse(@response.body)
+  @expected_json = parse_json('./data/wgoc_jsonrpc_cases/' + arg1)
+
+  # puts @response_json
+  # puts get_orderId
+  @response_json['result']['status'].should == @expected_json['result']['status']
+end
+
+# queryRefundList queryRefundList queryRefundList queryRefundList queryRefundList
+When /^我根据(.*)用post方法让测试桩发送请求至oc壹拾$/ do |arg1|
+  @request_data = JSON.parse((File.read('./data/wgoc_jsonrpc_cases/' + arg1)).to_s.encode('ascii', {:invalid => :replace, :undef => :replace, :replace => '?'}))
+  @response = RestClient.post JSONRPC_VANILLA_ORDERINNERAPI_QUERYREFUNDLIST_URI, @request_data.to_json
+
+  puts @request_data.to_json
+  puts @response
+end
+
+Then /^我应该得到与(.*)文件中相同的json壹拾$/ do |arg1|
+  # pending # express the regexp above with the code you wish you had
+  @response_json = JSON.parse(@response.body)
+  @expected_json = parse_json('./data/wgoc_jsonrpc_cases/' + arg1)
+
+  # puts @response_json
+  # puts get_orderId
+  @response_json['result']['success'].should == @expected_json['result']['success']
+end
+
+# queryRefundDetail queryRefundDetail queryRefundDetail queryRefundDetail queryRefundDetail
+When /^我根据(.*)用post方法让测试桩发送请求至oc壹拾壹$/ do |arg1|
+  @request_data = JSON.parse((File.read('./data/wgoc_jsonrpc_cases/' + arg1)).to_s.encode('ascii', {:invalid => :replace, :undef => :replace, :replace => '?'}))
+  @request_data['refundApplyId'] = get_refundId_edu
+  @response = RestClient.post JSONRPC_VANILLA_ORDERINNERAPI_QUERYREFUNDDETAIL_URI, @request_data.to_json
+
+  puts @request_data['refundApplyId']
+  puts @response
+end
+
+Then /^我应该得到与(.*)文件中相同的json壹拾壹$/ do |arg1|
+  # pending # express the regexp above with the code you wish you had
+  @response_json = JSON.parse(@response.body)
+  @expected_json = parse_json('./data/wgoc_jsonrpc_cases/' + arg1)
+
+  # puts @response_json
+  # puts get_orderId
+  @response_json['result']['success'].should == @expected_json['result']['success']
+end
+
+# handleRefundApply handleRefundApply handleRefundApply handleRefundApply handleRefundApply
+When /^我根据(.*)用post方法让测试桩发送请求至oc壹拾贰$/ do |arg1|
+  @request_data = JSON.parse((File.read('./data/wgoc_jsonrpc_cases/' + arg1)).to_s.encode('ascii', {:invalid => :replace, :undef => :replace, :replace => '?'}))
+  @request_data['refundId'] = get_refundId_edu
+  @request_data['orderId'] = get_orderId_edu
+  @response = RestClient.post JSONRPC_VANILLA_ORDERINNERAPI_HANDLEREFUNDAPPLY_URI, @request_data.to_json
+
+  puts @request_data['orderId']
+  puts @request_data['refundId']
+  puts @response
+end
+
+Then /^我应该得到与(.*)文件中相同的json壹拾贰$/ do |arg1|
+  # pending # express the regexp above with the code you wish you had
+  @response_json = JSON.parse(@response.body)
+  @expected_json = parse_json('./data/wgoc_jsonrpc_cases/' + arg1)
+
+  # puts @response_json
+  # puts get_orderId
+  @response_json['result']['success'].should == @expected_json['result']['success']
 end

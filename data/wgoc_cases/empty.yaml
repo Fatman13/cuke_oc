@@ -1,1 +1,12 @@
+queryInfo:
+ product_id: 19301861687
+ fid: 0
+ price: 4888.00
 kv:
+ id: 19301861687
+ newPrice: 4888.00
+ oldPrice: 4988.00
+oldkv:
+ id: 19301861687
+ newPrice: 4888.00
+ oldPrice: 4988.00
